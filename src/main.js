@@ -75,7 +75,7 @@ const update = () => {
 
   ctx.restore();
 
-  time += 0.01;
+  time += 0.05;
 };
 
 requestAnimationFrame(update);
