@@ -1,0 +1,18 @@
+{
+  "name": "nft-starter-vite",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.43.4",
+    "vite": "^2.6.4"
+  },
+  "dependencies": {
+    "event-emitter": "^0.3.5",
+    "gl-matrix": "^3.4.3",
+    "simplex-noise": "^3.0.0"
+  }
+}
