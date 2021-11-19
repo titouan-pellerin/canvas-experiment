@@ -1,6 +1,5 @@
 import "./style.scss";
 
-import Mouse from "./utils/mouse";
 import { Point } from "./utils/Point";
 import SimplexNoise from "simplex-noise";
 
@@ -9,8 +8,6 @@ canvas.width = window.innerWidth * window.devicePixelRatio;
 canvas.height = window.innerHeight * window.devicePixelRatio;
 
 const ctx = canvas.getContext("2d");
-
-let mouseX, mouseY;
 
 const noise = new SimplexNoise();
 
@@ -44,9 +41,6 @@ const update = () => {
   requestAnimationFrame(update);
 
   let t = Math.sin(time);
-
-  mouseX = ((Mouse.cursor[0] + 1) / 2) * canvas.width;
-  mouseY = ((Mouse.cursor[1] + 1) / 2) * canvas.height;
 
   let radius = 200;
 
